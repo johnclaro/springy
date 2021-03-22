@@ -1,14 +1,14 @@
-package com.johnclaro.chimp;
+package com.johnclaro.chimp.auth;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class AuthController {
+public class Auth {
 
     @GetMapping
     public String register() {
-        String response = "Register";
+        String response = "Register123";
         return response;
     }
 }
