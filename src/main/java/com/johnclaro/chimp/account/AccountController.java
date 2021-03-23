@@ -1,20 +1,30 @@
 package com.johnclaro.chimp.account;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
+import javax.validation.Valid;
 
-import java.util.Map;
-import java.util.HashMap;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestBody;
+
 
 @RestController
+@RequestMapping("/auth")
 public class AccountController {
 
-    @GetMapping({"/register"})
-    public Map<String, String> register(Account account) {
-        Account newAccount = new Account("john", "moo");
-        Map<String, String> response = new HashMap<>();
-        response.put("usernames", newAccount.getUsername());
-        response.put("password", newAccount.getPassword());
-        return response;
+    @Autowired
+    private AccountRepository accountRepository;
+
+    @GetMapping({"/accounts"})
+    public List<Account> getAllAccounts() {
+        return accountRepository.findAll();
+    }
+
+    @PostMapping({"/register"})
+    public Account register(@Valid @RequestBody Account account) {
+        return accountRepository.save(account);
     }
 }
