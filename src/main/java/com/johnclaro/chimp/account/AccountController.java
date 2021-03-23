@@ -1,4 +1,4 @@
-package com.johnclaro.chimp.account;
+package com.johnclaro.backend.account;
 
 import java.util.List;
 import javax.validation.Valid;

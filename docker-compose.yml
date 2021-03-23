@@ -9,4 +9,4 @@ services:
     environment:
       POSTGRES_USER: john
       POSTGRES_PASSWORD: secretpassword
-      POSTGRES_DB: chimp
+      POSTGRES_DB: backend

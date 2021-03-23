@@ -1,4 +1,4 @@
-package com.johnclaro.chimp.account;
+package com.johnclaro.backend.account;
 
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 

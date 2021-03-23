@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.johnclaro</groupId>
-	<artifactId>chimp</artifactId>
+	<artifactId>backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>chimp</name>
+	<name>backend</name>
 	<description>Generate multiple quizzes</description>
 	<properties>
 		<java.version>11</java.version>

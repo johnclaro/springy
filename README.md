@@ -1,4 +1,4 @@
-# chimp
+# backend
 Generate multiple quizzes
 
 ## Getting Started
