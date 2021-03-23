@@ -44,3 +44,5 @@ buildNumber.properties
 # intellij
 .idea
 *.iml
+.classpath
+.project
