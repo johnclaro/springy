@@ -46,3 +46,4 @@ buildNumber.properties
 *.iml
 .classpath
 .project
+.settings
