@@ -19,7 +19,7 @@ mvn clean test -P test
 
 ## Requirements
 
-- JDK **1.11.0**
+- JDK **11**
 
 ## SSH
 ```sh-session
