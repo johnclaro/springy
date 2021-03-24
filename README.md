@@ -7,13 +7,13 @@ Backend for johnclaro.com
 ## Getting started
 
 To start
-```bash-session
+```sh-session
 mvn package -P build
 java -jar target/backend-0.0.1-SNAPSHOT.jar
 ```
 
 To run test
-```bash-session
+```sh-session
 mvn clean test -P test
 ```
 
@@ -22,7 +22,7 @@ mvn clean test -P test
 JDK **1.11.0**
 
 ## SSH
-```bash-session
+```sh-session
 ssh-keygen -t rsa -C 'jkrclaro@gmail.com'
 base64 -w0 .ssh/id_rsa
 echo $(cat .ssh/id_rsa.pub) >> .ssh/authorized_keys
