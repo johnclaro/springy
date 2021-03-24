@@ -1,18 +1,25 @@
 # backend
-Backend for johnclaro.com
 
 [![Test](https://github.com/johnclaro/backend/actions/workflows/test.yml/badge.svg)](https://github.com/johnclaro/backend/actions/workflows/test.yml) [![Deploy](https://github.com/johnclaro/backend/actions/workflows/deploy.yml/badge.svg)](https://github.com/johnclaro/backend/actions/workflows/deploy.yml)
 
-
+Backend for johnclaro.com
 
 ## Getting started
 
-JDK 1.11.0
+To start
 ```bash-session
-mvn package
+mvn package -P build
 java -jar target/backend-0.0.1-SNAPSHOT.jar
 ```
 
+To run test
+```bash-session
+mvn clean test -P test
+```
+
+## Requirements
+
+JDK **1.11.0**
 
 ## SSH
 ```bash-session
