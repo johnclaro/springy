@@ -5,7 +5,7 @@ Backend for johnclaro.com
 
 
 
-## Installation
+## Getting started
 
 JDK 1.11.0
 ```bash-session
