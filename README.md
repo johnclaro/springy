@@ -1,21 +1,28 @@
 # backend
-Backend for johnclaro.com
 
 [![Test](https://github.com/johnclaro/backend/actions/workflows/test.yml/badge.svg)](https://github.com/johnclaro/backend/actions/workflows/test.yml) [![Deploy](https://github.com/johnclaro/backend/actions/workflows/deploy.yml/badge.svg)](https://github.com/johnclaro/backend/actions/workflows/deploy.yml)
 
-
+Backend for johnclaro.com
 
 ## Getting started
 
-JDK 1.11.0
-```bash-session
-mvn package
+To start
+```sh-session
+mvn package -P build
 java -jar target/backend-0.0.1-SNAPSHOT.jar
 ```
 
+To run test
+```sh-session
+mvn clean test -P test
+```
+
+## Requirements
+
+- JDK **11**
 
 ## SSH
-```bash-session
+```sh-session
 ssh-keygen -t rsa -C 'jkrclaro@gmail.com'
 base64 -w0 .ssh/id_rsa
 echo $(cat .ssh/id_rsa.pub) >> .ssh/authorized_keys
