@@ -21,4 +21,4 @@ jobs:
       run: mvn package -P build
     - name: Update app
       run: |
-        ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i ssh_private.key ec2-user@54.78.42.221 git -C /home/ec2-user/backend pull --ff-only
+        ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i ssh_private.key ec2-user@34.241.231.169 git -C /home/ec2-user/backend pull --ff-only

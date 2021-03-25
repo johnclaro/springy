@@ -24,6 +24,6 @@ mvn clean test -P test
 ## SSH
 ```sh-session
 ssh-keygen -t rsa -C 'jkrclaro@gmail.com'
-base64 -w0 .ssh/id_rsa
 echo $(cat .ssh/id_rsa.pub) >> .ssh/authorized_keys
+base64 -w0 .ssh/id_rsa
 ```
